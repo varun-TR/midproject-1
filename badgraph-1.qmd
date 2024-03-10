@@ -17,7 +17,7 @@ css: styles.css
 
 The chart is from an anti-vaccine article claiming a significant increase in athletes collapsing and dying since COVID vaccines were introduced in 2021. However, this claim is misleading because in 2021, sports events were significantly less frequent due to the pandemic.
 
-A more accurate comparison would be to contrast the number of collapses and deaths in the pre-COVID year of 2019, before the pandemic began. This comparison would provide a clearer understanding of any actual changes in the occurrences of collapses and deaths among athletes.
+A more accurate comparison would be to contrast the number of collapses and deaths in the pre-COVID year of 2019, before the pandemic began. This comparison would provide a clearer understanding of any actual changes in the occurrences of collapses and deaths among athletessssssssssss.
 
 ## Visual flaws in graph.
 
