@@ -7,6 +7,8 @@ website:
   navbar:
     left:
     - badgraph-1.qmd
+    - redesign-1.qmd
+    - badgraph-2.qmd
     
 format:
   html:
