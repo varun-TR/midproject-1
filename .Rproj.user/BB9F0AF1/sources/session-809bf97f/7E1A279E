@@ -1,25 +1,27 @@
 {
     "id": "7E1A279E",
-    "path": "/Users/trsaivarun/Desktop/stat-mid project/midproject/midproject/_quarto.yml",
+    "path": "~/Desktop/stat-mid project/midproject/midproject/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "1635797362",
     "contents": "",
     "dirty": false,
     "created": 1710092733336.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 2,
     "properties": {
         "tempName": "Untitled1",
         "source_window_id": "",
-        "Source": "Source"
+        "Source": "Source",
+        "cursorPosition": "8,7",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710092746,
+    "lastKnownWriteTime": 1710093082,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710092746408,
+    "last_content_update": 1710093082937,
     "read_only": false,
     "read_only_alternatives": []
 }

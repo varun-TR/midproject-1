@@ -1,5 +1,34 @@
 ---
-title: "badgraph-1"
-format: html
+title: "Badgraph-1"
 editor: visual
+format: html
+css: styles.css
 ---
+
+```         
+                                        MIDPROJECT 
+                           REDESIGNS OF GRAPHICAL REPRESENTATION
+                              By: Saivarun Tanjore Raghavendra
+```
+
+![](images/athletics_dead.png){fig-align="center"}
+
+#### Fig 1:1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot \[1\]
+
+The chart is from an anti-vaccine article claiming a significant increase in athletes collapsing and dying since COVID vaccines were introduced in 2021. However, this claim is misleading because in 2021, sports events were significantly less frequent due to the pandemic.
+
+A more accurate comparison would be to contrast the number of collapses and deaths in the pre-COVID year of 2019, before the pandemic began. This comparison would provide a clearer understanding of any actual changes in the occurrences of collapses and deaths among athletes.
+
+## Visual flaws in graph.
+
+-   Adjusting the y-axis to start at zero can reveal smaller variations at the lower end, offering a more accurate representation of the data.
+
+-   Reducing the graph to a two-dimensional view could simplify analysis and interpretation of values.
+
+-   While collapses are indeed concerning, the current graph heavily emphasizes them over deaths, potentially skewing perceptions of the overall severity of both occurrences.
+
+## Suggestions for improvements:
+
+-   Starting the y-axis at a value greater than zero can obscure smaller changes at the lower end of the scale, potentially misleading viewers about the magnitude of variations.
+-   A three-dimensional graph can make it challenging to analyze and interpret data accurately, as it introduces unnecessary complexity and can distract from the main insights.
+-   Additionally, the current graph places disproportionate emphasis on collapses compared to deaths, which may distort perceptions of the severity of each occurrence.

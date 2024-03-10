@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "badgraph-2.html",
+    "href": "badgraph-2.html",
+    "title": "MidProject",
+    "section": "",
+    "text": "Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N"
+  },
+  {
+    "objectID": "badgraph-2.html#suggestions-for-improvements",
+    "href": "badgraph-2.html#suggestions-for-improvements",
+    "title": "MidProject",
+    "section": "Suggestions for improvements:",
+    "text": "Suggestions for improvements:\n\nBy modifying the lengths of bar plots, we can actually see the difference between argentina and EEU being 20 times greater .\nCreating y axis and x axis involves establishing the vertical (y-axis) and horizontal (x-axis) axes on a graph. These axes serve as reference points for interpreting data and provide context for the relationships between variables.\nGraphs typically operate in two dimensions, with data represented along both the x-axis and y-axis. Converting a graph into a 2D format involves simplifying the visualizations.\nOne optional modification would be changing the language of graph to english, as majority viewers can understand and interpret this language very well."
+  },
+  {
+    "objectID": "badgraph-1.html",
+    "href": "badgraph-1.html",
+    "title": "Badgraph-1",
+    "section": "",
+    "text": "MIDPROJECT \n                           REDESIGNS OF GRAPHICAL REPRESENTATION\n                              By: Saivarun Tanjore Raghavendra"
+  },
+  {
+    "objectID": "badgraph-1.html#visual-flaws-in-graph.",
+    "href": "badgraph-1.html#visual-flaws-in-graph.",
+    "title": "Badgraph-1",
+    "section": "Visual flaws in graph.",
+    "text": "Visual flaws in graph.\n\nAdjusting the y-axis to start at zero can reveal smaller variations at the lower end, offering a more accurate representation of the data.\nReducing the graph to a two-dimensional view could simplify analysis and interpretation of values.\nWhile collapses are indeed concerning, the current graph heavily emphasizes them over deaths, potentially skewing perceptions of the overall severity of both occurrences."
+  },
+  {
+    "objectID": "badgraph-1.html#suggestions-for-improvements",
+    "href": "badgraph-1.html#suggestions-for-improvements",
+    "title": "Badgraph-1",
+    "section": "Suggestions for improvements:",
+    "text": "Suggestions for improvements:\n\nStarting the y-axis at a value greater than zero can obscure smaller changes at the lower end of the scale, potentially misleading viewers about the magnitude of variations.\nA three-dimensional graph can make it challenging to analyze and interpret data accurately, as it introduces unnecessary complexity and can distract from the main insights.\nAdditionally, the current graph places disproportionate emphasis on collapses compared to deaths, which may distort perceptions of the severity of each occurrence."
+  }
+]
