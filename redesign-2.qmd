@@ -1,13 +1,28 @@
 ---
-title: "redesign-2 (2/2)"
+title: "Redesigns"
 editor: visual
 ---
 
-## Improvements from scatterplot chart
+## Improving to scatterplot chart
+
+-   A data frame named **`co2_data`** is created, containing two columns: **`country`** and **`tests`**.
+
+-   **`country`** represents the countries, and **`tests`** represents the number of Covid tests conducted in each country.
+
+    ```{r}
+    co2_data <- data.frame(
+      country = c("Brasil", "Argentina", "EEUU", "Italia", "Alemania", "Norurga"),
+      tests = c(256, 330, 7000, 14100, 15700, 22300)
+    )
+    ```
+
+The **`ggplot()`** function initializes a ggplot object, specifying the data (**`co2_data`**) and aesthetics (**`aes`**) mapping the x-axis to **`country`** and the y-axis to **`tests`**.
 
 ![](images/covid2.png){fig-align="center"}
 
 #### Fig 4: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into scatter plot.
+
+## Why we re-designed to scatterplot?
 
 -   We can enhance clarity by converting the graph into a scatter plot, allowing for detailed observation. Notably, Germany stands out as approximately 20 times more significant.
 
@@ -17,11 +32,29 @@ editor: visual
 
 Instead of scatter plot, we can convert into map and represent the test numbers so by just looking we can able to interpret the results.
 
-## Improvements from map chart
+## Improving to map chart
+
+Now we will use same dataset:
+
+```{r}
+covid_data <- data.frame(
+  country = c("Brazil", "Argentina", "United States of America", "Italy","Germany","Norway"),
+  tests = c(258, 330, 7000, 14100,15700,22300)
+)
+
+```
+
+-   The **`ne_countries()`** function from the **`rnaturalearth`** package is used to fetch the world map dataset. It's stored in the **`world`** object.
+
+-   The **`merge()`** function is employed to combine the world map data (**`world`**) with COVID-19 test data (**`covid_data`**). This merge is performed based on the country names.
+
+-   **`all.x = TRUE`** ensures that all rows from the left dataset (world map) are retained, and after some styling.
 
 ![](images/map.png){fig-align="center"}
 
 #### Fig 5: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into map.
+
+## Why we re-designed to map?
 
 With the map we can see the countries with less covid test are represented in light shade and countries with more covid tests are represented in dark shade. By visually examining the graph structure, users can identify patterns, clusters, and outliers within the data. Map graphs serve as effective communication tools for presenting and sharing findings with stakeholders, collaborators, and the general public.
 

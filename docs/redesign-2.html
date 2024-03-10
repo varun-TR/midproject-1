@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MidProject - redesign-2 (2/2)</title>
+<title>MidProject - Redesigns</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -85,27 +119,27 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./redesign-1.html" rel="" target="">
- <span class="menu-text">redesign-1 (2/2)</span></a>
+ <span class="menu-text">Redesigns</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./badgraph-2.html" rel="" target="">
- <span class="menu-text">badgraph-2</span></a>
+ <span class="menu-text">Badgraph-2</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./redesign-2.html" rel="" target="" aria-current="page">
- <span class="menu-text">redesign-2 (2/2)</span></a>
+ <span class="menu-text">Redesigns</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./code.html" rel="" target="">
- <span class="menu-text">codes</span></a>
+ <span class="menu-text">Codes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./video-explanation.html" rel="" target="">
- <span class="menu-text">video-explanation</span></a>
+ <span class="menu-text">Video-Explanation</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./references.html" rel="" target="">
- <span class="menu-text">references</span></a>
+ <span class="menu-text">References</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -124,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">redesign-2 (2/2)</h1>
+<h1 class="title">Redesigns</h1>
 </div>
 
 
@@ -139,8 +173,19 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="improvements-from-scatterplot-chart" class="level2">
-<h2 class="anchored" data-anchor-id="improvements-from-scatterplot-chart">Improvements from scatterplot chart</h2>
+<section id="improving-to-scatterplot-chart" class="level2">
+<h2 class="anchored" data-anchor-id="improving-to-scatterplot-chart">Improving to scatterplot chart</h2>
+<ul>
+<li><p>A data frame named <strong><code>co2_data</code></strong> is created, containing two columns: <strong><code>country</code></strong> and <strong><code>tests</code></strong>.</p></li>
+<li><p><strong><code>country</code></strong> represents the countries, and <strong><code>tests</code></strong> represents the number of Covid tests conducted in each country.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>co2_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">country =</span> <span class="fu">c</span>(<span class="st">"Brasil"</span>, <span class="st">"Argentina"</span>, <span class="st">"EEUU"</span>, <span class="st">"Italia"</span>, <span class="st">"Alemania"</span>, <span class="st">"Norurga"</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tests =</span> <span class="fu">c</span>(<span class="dv">256</span>, <span class="dv">330</span>, <span class="dv">7000</span>, <span class="dv">14100</span>, <span class="dv">15700</span>, <span class="dv">22300</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div></li>
+</ul>
+<p>The <strong><code>ggplot()</code></strong> function initializes a ggplot object, specifying the data (<strong><code>co2_data</code></strong>) and aesthetics (<strong><code>aes</code></strong>) mapping the x-axis to <strong><code>country</code></strong> and the y-axis to <strong><code>tests</code></strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/covid2.png" class="img-fluid figure-img"></p>
@@ -148,6 +193,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="fig-4-1-redesign-of-argentinian-tv-channel-c5n-manipulating-the-y-axis-to-hide-the-terrible-number-of-covid-19-test.-source-reddit.-original-source-c5n-into-scatter-plot." class="level4">
 <h4 class="anchored" data-anchor-id="fig-4-1-redesign-of-argentinian-tv-channel-c5n-manipulating-the-y-axis-to-hide-the-terrible-number-of-covid-19-test.-source-reddit.-original-source-c5n-into-scatter-plot.">Fig 4: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into scatter plot.</h4>
+</section>
+</section>
+<section id="why-we-re-designed-to-scatterplot" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-re-designed-to-scatterplot">Why we re-designed to scatterplot?</h2>
 <ul>
 <li><p>We can enhance clarity by converting the graph into a scatter plot, allowing for detailed observation. Notably, Germany stands out as approximately 20 times more significant.</p></li>
 <li><p>Moreover, the graph suggests some variability in the relationship between the variables, indicating a positive correlation among the data points.</p></li>
@@ -155,9 +204,20 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>Instead of scatter plot, we can convert into map and represent the test numbers so by just looking we can able to interpret the results.</p>
 </section>
-</section>
-<section id="improvements-from-map-chart" class="level2">
-<h2 class="anchored" data-anchor-id="improvements-from-map-chart">Improvements from map chart</h2>
+<section id="improving-to-map-chart" class="level2">
+<h2 class="anchored" data-anchor-id="improving-to-map-chart">Improving to map chart</h2>
+<p>Now we will use same dataset:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>covid_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">country =</span> <span class="fu">c</span>(<span class="st">"Brazil"</span>, <span class="st">"Argentina"</span>, <span class="st">"United States of America"</span>, <span class="st">"Italy"</span>,<span class="st">"Germany"</span>,<span class="st">"Norway"</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">tests =</span> <span class="fu">c</span>(<span class="dv">258</span>, <span class="dv">330</span>, <span class="dv">7000</span>, <span class="dv">14100</span>,<span class="dv">15700</span>,<span class="dv">22300</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>The <strong><code>ne_countries()</code></strong> function from the <strong><code>rnaturalearth</code></strong> package is used to fetch the world map dataset. It’s stored in the <strong><code>world</code></strong> object.</p></li>
+<li><p>The <strong><code>merge()</code></strong> function is employed to combine the world map data (<strong><code>world</code></strong>) with COVID-19 test data (<strong><code>covid_data</code></strong>). This merge is performed based on the country names.</p></li>
+<li><p><strong><code>all.x = TRUE</code></strong> ensures that all rows from the left dataset (world map) are retained, and after some styling.</p></li>
+</ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/map.png" class="img-fluid figure-img"></p>
@@ -165,6 +225,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="fig-5-1-redesign-of-argentinian-tv-channel-c5n-manipulating-the-y-axis-to-hide-the-terrible-number-of-covid-19-test.-source-reddit.-original-source-c5n-into-map." class="level4">
 <h4 class="anchored" data-anchor-id="fig-5-1-redesign-of-argentinian-tv-channel-c5n-manipulating-the-y-axis-to-hide-the-terrible-number-of-covid-19-test.-source-reddit.-original-source-c5n-into-map.">Fig 5: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into map.</h4>
+</section>
+</section>
+<section id="why-we-re-designed-to-map" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-re-designed-to-map">Why we re-designed to map?</h2>
 <p>With the map we can see the countries with less covid test are represented in light shade and countries with more covid tests are represented in dark shade. By visually examining the graph structure, users can identify patterns, clusters, and outliers within the data. Map graphs serve as effective communication tools for presenting and sharing findings with stakeholders, collaborators, and the general public.</p>
 <p>By converting into map we can achieve:</p>
 <ul>
@@ -174,7 +238,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

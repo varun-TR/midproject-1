@@ -1,13 +1,33 @@
 ---
-title: "redesign-1 (2/2)"
+title: "Redesigns"
 editor: visual
 ---
 
-## Improvements from dual axis line chart
+## Improving to dual axis line chart
+
+-   **Loading Required Libraries**: We start by loading the **`plotly`** library.
+
+    say : library(plotly)
+
+-   **Creating Sample Data**: Next, we create a data frame called **`data`**. This data frame contains three columns: **`month`**, **`collapses`**, and **`deaths`**. **`month`** is a factor variable representing the months of the year, while **`collapses`** and **`deaths`** represent the number of athlete collapses and deaths, respectively, for each month.
+
+```{r}
+data <- data.frame(
+  month = factor(c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"),
+                 levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")),
+  collapses = c(7, 6, 16, 17, 20, 28, 46, 57, 81, 109, 116, 124, 126, 73, 120, 55),
+  deaths = c(4, 4, 8, 10, 7, 19, 33, 34, 43, 64, 77, 90, 86, 51, 83, 36)
+)
+
+```
+
+We specify the data (**`data`**), x-axis (**`~month`**), and y-axis (**`~collapses`**). We set the type of plot as **`'scatter'`** and mode as **`'lines'`**, and name the trace as **`'Collapses'`**. The we plot as shown below:
 
 ![](images/lines.png){fig-align="center"}
 
 #### Fig 2: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into dual axis line chart.
+
+## Why we re-designed to dual axis line chart?
 
 The line chart effectively displays the trend over time, showcasing that collapses significantly outnumber deaths. The y-axis values are reasonable, aiding in understanding the scale of occurrences.
 
@@ -21,13 +41,29 @@ overall:
 
 -   Redesigning the graph as a dual-axis line chart would enhance clarity by allowing viewers to compare collapses and deaths directly, providing a more comprehensive understanding of their relationship and trends over time.
 
-## Improvements from bar chart
+## Improving to bar chart
+
+Lets use the same data set:
+
+```{r}
+data <- data.frame(
+  month = factor(c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr"),
+                 levels = c("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")),
+  collapses = c(7, 6, 16, 17, 20, 28, 46, 57, 81, 109, 116, 124, 126, 73, 120, 55),
+  deaths = c(4, 4, 8, 10, 7, 19, 33, 34, 43, 64, 77, 90, 86, 51, 83, 36)
+)
+
+```
+
+Then **`plot_ly()`** function initializes the plot by defining the dataset (**`data`**), the variable to be represented on the x-axis (**`~month`**), and the variable to be represented on the y-axis (**`~collapses`**) for collapses. By setting the **`type`** argument to **`'bar'`**, it creates a column bar chart, naming this trace as 'Collapses'.
+
+To incorporate another dataset onto the plot, the **`add_trace()`** function is utilized. Here, it adds a new trace representing the deaths data (**`~deaths`**) against the same months (**`~month`**).
 
 ![](images/multibar.png){fig-align="center"}
 
 #### Fig 3: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into bar chart.
 
-This code creates a separate bar chart for collapses and deaths, positioned side-by-side. This allows for easier visual comparison between the two variables.
+## Why we re-designed to barplot?
 
 By converting into bar graph, we can achieve the following :
 

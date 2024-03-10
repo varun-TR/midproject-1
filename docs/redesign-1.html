@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MidProject - redesign-1 (2/2)</title>
+<title>MidProject - Redesigns</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -85,27 +119,27 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./redesign-1.html" rel="" target="" aria-current="page">
- <span class="menu-text">redesign-1 (2/2)</span></a>
+ <span class="menu-text">Redesigns</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./badgraph-2.html" rel="" target="">
- <span class="menu-text">badgraph-2</span></a>
+ <span class="menu-text">Badgraph-2</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./redesign-2.html" rel="" target="">
- <span class="menu-text">redesign-2</span></a>
+ <span class="menu-text">Redesigns</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./code.html" rel="" target="">
- <span class="menu-text">codes</span></a>
+ <span class="menu-text">Codes</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./video-explanation.html" rel="" target="">
- <span class="menu-text">video-explanation</span></a>
+ <span class="menu-text">Video-Explanation</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./references.html" rel="" target="">
- <span class="menu-text">references</span></a>
+ <span class="menu-text">References</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -124,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">redesign-1 (2/2)</h1>
+<h1 class="title">Redesigns</h1>
 </div>
 
 
@@ -139,8 +173,22 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="improvements-from-dual-axis-line-chart" class="level2">
-<h2 class="anchored" data-anchor-id="improvements-from-dual-axis-line-chart">Improvements from dual axis line chart</h2>
+<section id="improving-to-dual-axis-line-chart" class="level2">
+<h2 class="anchored" data-anchor-id="improving-to-dual-axis-line-chart">Improving to dual axis line chart</h2>
+<ul>
+<li><p><strong>Loading Required Libraries</strong>: We start by loading the <strong><code>plotly</code></strong> library.</p>
+<p>say : library(plotly)</p></li>
+<li><p><strong>Creating Sample Data</strong>: Next, we create a data frame called <strong><code>data</code></strong>. This data frame contains three columns: <strong><code>month</code></strong>, <strong><code>collapses</code></strong>, and <strong><code>deaths</code></strong>. <strong><code>month</code></strong> is a factor variable representing the months of the year, while <strong><code>collapses</code></strong> and <strong><code>deaths</code></strong> represent the number of athlete collapses and deaths, respectively, for each month.</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">month =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>, <span class="st">"May"</span>, <span class="st">"Jun"</span>, <span class="st">"Jul"</span>, <span class="st">"Aug"</span>, <span class="st">"Sep"</span>, <span class="st">"Oct"</span>, <span class="st">"Nov"</span>, <span class="st">"Dec"</span>, <span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>, <span class="st">"May"</span>, <span class="st">"Jun"</span>, <span class="st">"Jul"</span>, <span class="st">"Aug"</span>, <span class="st">"Sep"</span>, <span class="st">"Oct"</span>, <span class="st">"Nov"</span>, <span class="st">"Dec"</span>)),</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">collapses =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">6</span>, <span class="dv">16</span>, <span class="dv">17</span>, <span class="dv">20</span>, <span class="dv">28</span>, <span class="dv">46</span>, <span class="dv">57</span>, <span class="dv">81</span>, <span class="dv">109</span>, <span class="dv">116</span>, <span class="dv">124</span>, <span class="dv">126</span>, <span class="dv">73</span>, <span class="dv">120</span>, <span class="dv">55</span>),</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">deaths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">7</span>, <span class="dv">19</span>, <span class="dv">33</span>, <span class="dv">34</span>, <span class="dv">43</span>, <span class="dv">64</span>, <span class="dv">77</span>, <span class="dv">90</span>, <span class="dv">86</span>, <span class="dv">51</span>, <span class="dv">83</span>, <span class="dv">36</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We specify the data (<strong><code>data</code></strong>), x-axis (<strong><code>~month</code></strong>), and y-axis (<strong><code>~collapses</code></strong>). We set the type of plot as <strong><code>'scatter'</code></strong> and mode as <strong><code>'lines'</code></strong>, and name the trace as <strong><code>'Collapses'</code></strong>. The we plot as shown below:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/lines.png" class="img-fluid figure-img"></p>
@@ -148,6 +196,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="fig-2-1-redesign-of-1024-athlete-cardiac-arrests-serious-issues-666-dead-after-covid-shot-into-dual-axis-line-chart." class="level4">
 <h4 class="anchored" data-anchor-id="fig-2-1-redesign-of-1024-athlete-cardiac-arrests-serious-issues-666-dead-after-covid-shot-into-dual-axis-line-chart.">Fig 2: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into dual axis line chart.</h4>
+</section>
+</section>
+<section id="why-we-re-designed-to-dual-axis-line-chart" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-re-designed-to-dual-axis-line-chart">Why we re-designed to dual axis line chart?</h2>
 <p>The line chart effectively displays the trend over time, showcasing that collapses significantly outnumber deaths. The y-axis values are reasonable, aiding in understanding the scale of occurrences.</p>
 <p>To enhance clarity in distinguishing collapses from deaths per month, we can consider redesigning the graph as a dual-axis line chart. This modification would enable viewers to clearly visualize and compare the trends of collapses and deaths simultaneously, providing a clearer understanding of the relationship between the two variables.</p>
 <p>overall:</p>
@@ -157,9 +209,19 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Redesigning the graph as a dual-axis line chart would enhance clarity by allowing viewers to compare collapses and deaths directly, providing a more comprehensive understanding of their relationship and trends over time.</p></li>
 </ul>
 </section>
-</section>
-<section id="improvements-from-bar-chart" class="level2">
-<h2 class="anchored" data-anchor-id="improvements-from-bar-chart">Improvements from bar chart</h2>
+<section id="improving-to-bar-chart" class="level2">
+<h2 class="anchored" data-anchor-id="improving-to-bar-chart">Improving to bar chart</h2>
+<p>Lets use the same data set:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">month =</span> <span class="fu">factor</span>(<span class="fu">c</span>(<span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>, <span class="st">"May"</span>, <span class="st">"Jun"</span>, <span class="st">"Jul"</span>, <span class="st">"Aug"</span>, <span class="st">"Sep"</span>, <span class="st">"Oct"</span>, <span class="st">"Nov"</span>, <span class="st">"Dec"</span>, <span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>),</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"Jan"</span>, <span class="st">"Feb"</span>, <span class="st">"Mar"</span>, <span class="st">"Apr"</span>, <span class="st">"May"</span>, <span class="st">"Jun"</span>, <span class="st">"Jul"</span>, <span class="st">"Aug"</span>, <span class="st">"Sep"</span>, <span class="st">"Oct"</span>, <span class="st">"Nov"</span>, <span class="st">"Dec"</span>)),</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">collapses =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">6</span>, <span class="dv">16</span>, <span class="dv">17</span>, <span class="dv">20</span>, <span class="dv">28</span>, <span class="dv">46</span>, <span class="dv">57</span>, <span class="dv">81</span>, <span class="dv">109</span>, <span class="dv">116</span>, <span class="dv">124</span>, <span class="dv">126</span>, <span class="dv">73</span>, <span class="dv">120</span>, <span class="dv">55</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">deaths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">10</span>, <span class="dv">7</span>, <span class="dv">19</span>, <span class="dv">33</span>, <span class="dv">34</span>, <span class="dv">43</span>, <span class="dv">64</span>, <span class="dv">77</span>, <span class="dv">90</span>, <span class="dv">86</span>, <span class="dv">51</span>, <span class="dv">83</span>, <span class="dv">36</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Then <strong><code>plot_ly()</code></strong> function initializes the plot by defining the dataset (<strong><code>data</code></strong>), the variable to be represented on the x-axis (<strong><code>~month</code></strong>), and the variable to be represented on the y-axis (<strong><code>~collapses</code></strong>) for collapses. By setting the <strong><code>type</code></strong> argument to <strong><code>'bar'</code></strong>, it creates a column bar chart, naming this trace as ‘Collapses’.</p>
+<p>To incorporate another dataset onto the plot, the <strong><code>add_trace()</code></strong> function is utilized. Here, it adds a new trace representing the deaths data (<strong><code>~deaths</code></strong>) against the same months (<strong><code>~month</code></strong>).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/multibar.png" class="img-fluid figure-img"></p>
@@ -167,7 +229,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="fig-3-1-redesign-of-1024-athlete-cardiac-arrests-serious-issues-666-dead-after-covid-shot-into-bar-chart." class="level4">
 <h4 class="anchored" data-anchor-id="fig-3-1-redesign-of-1024-athlete-cardiac-arrests-serious-issues-666-dead-after-covid-shot-into-bar-chart.">Fig 3: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into bar chart.</h4>
-<p>This code creates a separate bar chart for collapses and deaths, positioned side-by-side. This allows for easier visual comparison between the two variables.</p>
+</section>
+</section>
+<section id="why-we-re-designed-to-barplot" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-re-designed-to-barplot">Why we re-designed to barplot?</h2>
 <p>By converting into bar graph, we can achieve the following :</p>
 <ul>
 <li><p>This Bar graphs enable a clear and instant comparison between different variables.</p></li>
@@ -178,7 +243,6 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
