@@ -77,6 +77,13 @@
     "text": "Improvements from bar chart\n\n\n\n\n\n\nFig 3: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into bar chart.\nThis code creates a separate bar chart for collapses and deaths, positioned side-by-side. This allows for easier visual comparison between the two variables.\nBy converting into bar graph, we can achieve the following :\n\nThis Bar graphs enable a clear and instant comparison between different variables.\nThis Bar graph provide a two-dimensional portrayal of data, which is often simpler for humans to comprehend compared to raw numerical data. By presenting collapses and deaths on a shared scale, viewers can swiftly grasp the relative variances and trends between the two variables.\nBar graphs make it easy to spot the highest and lowest values for each variable in each month. This can be achieved by observing the tallest and shortest bars. This insight is crucial for understanding the severity of collapses and deaths over time and identifying any exceptional occurrences.\nBy visually representing collapses and deaths side by side, viewers can readily discern patterns and trends. Noting that there are more collapses than deaths in each month, in this case, highlights a potentially significant issue that may warrant further investigation or intervention.\nGraphical representations streamline the communication of insights derived from the data. Instead of presenting viewers with raw figures or extensive tables, a bar graph condenses the information into a visually understandable format, making it easier for stakeholders to comprehend and act upon."
   },
   {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "references",
+    "section": "",
+    "text": "[1] Author: Global COVID Summit. Title: “Vaccine Injured: 1024 Athlete Cardiac Arrests, Serious Issues — 666 Dead After COVID Shot,” Publisher: Global COVID Summit. [Online]. Date: April 2022, Url Available: https://globalcovidsummit.org/vaccine-injured/-1024-athlete-cardiac-arrests-serious-issues-666-dead-after-covid-shot\n[2] Author: CSN news channel. Title: “Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 tests,” [Online]. Publisher:CSN news channel , Date: April 2020, Url Available: https://www.c5n.com/ and Argentinian channel (reditt) ."
+  },
+  {
     "objectID": "badgraph--2.html#suggestions-for-improvements",
     "href": "badgraph--2.html#suggestions-for-improvements",
     "title": "badgraph–2",
