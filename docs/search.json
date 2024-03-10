@@ -28,6 +28,27 @@
     "text": "Suggestions for improvements:\n\nStarting the y-axis at a value greater than zero can obscure smaller changes at the lower end of the scale, potentially misleading viewers about the magnitude of variations.\nA three-dimensional graph can make it challenging to analyze and interpret data accurately, as it introduces unnecessary complexity and can distract from the main insights.\nAdditionally, the current graph places disproportionate emphasis on collapses compared to deaths, which may distort perceptions of the severity of each occurrence."
   },
   {
+    "objectID": "redesign-2.html",
+    "href": "redesign-2.html",
+    "title": "redesign-2",
+    "section": "",
+    "text": "We can enhance clarity by converting the graph into a scatter plot, allowing for detailed observation. Notably, Germany stands out as approximately 20 times more significant.\nMoreover, the graph suggests some variability in the relationship between the variables, indicating a positive correlation among the data points.\nBy creating clear x and y axes. This addition will provide better context for interpreting the data and facilitate easier comparison between countries.\n\nInstead of scatter plot, we can convert into map and represent the test numbers so by just looking we can able to interpret the results."
+  },
+  {
+    "objectID": "redesign-2.html#improvements-from-scatterplot-chart",
+    "href": "redesign-2.html#improvements-from-scatterplot-chart",
+    "title": "redesign-2",
+    "section": "",
+    "text": "We can enhance clarity by converting the graph into a scatter plot, allowing for detailed observation. Notably, Germany stands out as approximately 20 times more significant.\nMoreover, the graph suggests some variability in the relationship between the variables, indicating a positive correlation among the data points.\nBy creating clear x and y axes. This addition will provide better context for interpreting the data and facilitate easier comparison between countries.\n\nInstead of scatter plot, we can convert into map and represent the test numbers so by just looking we can able to interpret the results."
+  },
+  {
+    "objectID": "redesign-2.html#improvements-from-map-chart",
+    "href": "redesign-2.html#improvements-from-map-chart",
+    "title": "redesign-2",
+    "section": "Improvements from map chart",
+    "text": "Improvements from map chart\n\n\n\n\n\n\nFig 5: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into map.\nWith the map we can see the countries with less covid test are represented in light shade and countries with more covid tests are represented in dark shade. By visually examining the graph structure, users can identify patterns, clusters, and outliers within the data. Map graphs serve as effective communication tools for presenting and sharing findings with stakeholders, collaborators, and the general public.\nBy converting into map we can achieve:\n\nWe can achieve, a clear visual representation of the density of COVID testing across different countries. Lighter shades typically indicate lower testing rates, while darker shades signify higher testing rates. This allows viewers to quickly identify regions where testing is more or less prevalent.\nBy examining the map, users can identify patterns and clusters within the data. For example, they may observe clusters of darker shades in regions with more robust covid-19 tests or higher infection rates. Conversely, lighter shades may indicate areas with limited access to testing resources.\nWe can see patterns and outlines easily and map graphs serve as effective communication tools for presenting findings to stakeholders, collaborators, and the general public."
+  },
+  {
     "objectID": "redesign-1.html",
     "href": "redesign-1.html",
     "title": "redesign-1",

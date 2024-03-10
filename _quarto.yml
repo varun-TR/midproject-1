@@ -9,6 +9,7 @@ website:
     - badgraph-1.qmd
     - redesign-1.qmd
     - badgraph-2.qmd
+    - redesign-2.qmd
     
 format:
   html:
