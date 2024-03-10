@@ -51,7 +51,7 @@ co2_data$country <- factor(co2_data$country, levels = co2_data$country)
 
 gg <- ggplot(co2_data, aes(x = country, y = tests)) +
   geom_point(size = 3, color = "skyblue") +
-  geom_text(aes(label = tests), vjust = -0.3, hjust = -0.2, color = "black") +  # Add labels
+  geom_text(aes(label = tests), vjust = -0.1, hjust = -0.2, color = "black") +  # Add labels
   labs(title = "Covid tests by Country",
        x = "Country",
        y = "covid tests in millions(m)") +

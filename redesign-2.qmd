@@ -5,7 +5,7 @@ editor: visual
 
 ## Improvements from scatterplot chart
 
-![](images/scatterplot-01.png){fig-align="center"}
+![](images/covid2.png){fig-align="center"}
 
 #### Fig 4: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into scatter plot.
 
