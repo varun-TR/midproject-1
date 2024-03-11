@@ -5,6 +5,7 @@ project:
 website:
   title: "MidProject"
   navbar:
+    background: dark
     left:
     - badgraph-1.qmd
     - redesign-1.qmd
