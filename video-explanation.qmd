@@ -21,4 +21,4 @@ Below is the cheat sheet for codes:
 
 ![](images/Screenshot 2024-03-10 at 3.43.32 PM.png){fig-align="center"}
 
-####  Fig 6: 1 cheat sheet for codes (ggplot2).
+####  Fig 6: cheat sheet for codes (ggplot2)\[3\].

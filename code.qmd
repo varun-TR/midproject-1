@@ -16,8 +16,8 @@ data <- data.frame(
 plot_ly(data, x = ~month, y = ~collapses, type = 'scatter', mode = 'lines', name = 'Collapses') %>%
   add_trace(y = ~deaths, name = 'Deaths') %>% #here we add additional layer to dataset.
   layout(title = "Athlete Collapses and Deaths",
-         xaxis = list(title = "Month"),
-         yaxis = list(title = "Count", tickvals = c(0, 10, 20, 30,40,50,60,70,80,90,100,120)))
+         xaxis = list(title = "Months"),
+         yaxis = list(title = "Number of deaths/collapses (units: count)", tickvals = c(0, 10, 20, 30,40,50,60,70,80,90,100,120)))
 ```
 
 ```{r}
@@ -35,8 +35,8 @@ data <- data.frame(
 plot_ly(data, x = ~month, y = ~collapses, type = 'bar', name = 'Collapses', marker = list(color = 'skyblue', line = list(color = 'darkblue', width = 1))) %>%
   add_trace(x = ~month, y = ~deaths, name = 'Deaths', marker = list(color = 'coral', line = list(color = 'darkred', width = 1))) %>%
   layout(title = "Athlete Collapses and Deaths",
-         xaxis = list(title = "Month"),
-         yaxis = list(title = "Frequencies", tickvals = c(0, 10, 20, 30,40,50,60,70,80,90,100,120)), barmode = 'group')
+         xaxis = list(title = "Months"),
+         yaxis = list(title = "Frequencies (units:count)", tickvals = c(0, 10, 20, 30,40,50,60,70,80,90,100,120)), barmode = 'group')
 ```
 
 ```{r}
@@ -84,7 +84,7 @@ leaflet_map <- leaflet(data = world_with_co2) %>%
     fillColor = ~colorQuantile("Reds", tests)(tests),
     fillOpacity = 0.7,
     weight = 1,
-    popup = ~paste(name, ": ", tests, " tests")
+    popup = ~paste(name, ": ", tests, " tests in millions(m)")
   ) %>%
   addLegend(
     position = "bottomright",

@@ -23,7 +23,7 @@ data <- data.frame(
 
 We specify the data (**`data`**), x-axis (**`~month`**), and y-axis (**`~collapses`**). We set the type of plot as **`'scatter'`** and mode as **`'lines'`**, and name the trace as **`'Collapses'`**. The we plot as shown below:
 
-![](images/lines.png){fig-align="center"}
+![](images/Screenshot 2024-03-10 at 8.30.12 PM.png){fig-align="center"}
 
 #### Fig 2: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into dual axis line chart.
 
@@ -67,7 +67,7 @@ Then **`plot_ly()`** function initializes the plot by defining the dataset (**`d
 
 To incorporate another dataset onto the plot, the **`add_trace()`** function is utilized. Here, it adds a new trace representing the deaths data (**`~deaths`**) against the same months (**`~month`**).
 
-![](images/multibar.png){fig-align="center"}
+![](images/Screenshot 2024-03-10 at 8.30.46 PM.png){fig-align="center"}
 
 #### Fig 3: 1 Redesign of 1024 Athlete Cardiac Arrests, Serious Issues, 666 Dead, After COVID Shot into bar chart.
 

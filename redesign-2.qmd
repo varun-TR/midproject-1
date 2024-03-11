@@ -58,7 +58,11 @@ covid_data <- data.frame(
 
 -   **`all.x = TRUE`** ensures that all rows from the left dataset (world map) are retained, and after some styling.
 
-![](images/map.png){fig-align="center"}
+Title: Map showing covid test in different countries.
+
+countries have Test in millions(m) as units.
+
+![](images/Screenshot 2024-03-10 at 8.28.17 PM.png){fig-align="center"}
 
 #### Fig 5: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into map.
 
