@@ -3,7 +3,7 @@
     "path": "~/Desktop/stat-mid project/midproject/midproject/badgraph-1.qmd",
     "project_path": "badgraph-1.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "153329078",
     "contents": "",
     "dirty": false,
     "created": 1710092760850.0,
@@ -15,18 +15,18 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "9,0",
+        "cursorPosition": "27,0",
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "250:407"
+        "rmdVisualModeLocation": "1575:765.5"
     },
     "folds": "",
-    "lastKnownWriteTime": 1710106262,
+    "lastKnownWriteTime": 1710115474,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1710106262608,
+    "last_content_update": 1710115474889,
     "read_only": false,
     "read_only_alternatives": []
 }

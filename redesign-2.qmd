@@ -22,7 +22,7 @@ The **`ggplot()`** function initializes a ggplot object, specifying the data (**
 
 #### Fig 4: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into scatter plot.
 
-## Why we re-designed to scatterplot?
+## Why we re-designed to scatterplot? (Strengths)
 
 -   We can enhance clarity by converting the graph into a scatter plot, allowing for detailed observation. Notably, Germany stands out as approximately 20 times more significant.
 
@@ -31,6 +31,14 @@ The **`ggplot()`** function initializes a ggplot object, specifying the data (**
 -   By creating clear x and y axes. This addition will provide better context for interpreting the data and facilitate easier comparison between countries.
 
 Instead of scatter plot, we can convert into map and represent the test numbers so by just looking we can able to interpret the results.
+
+## Weakness of this chart:
+
+-   The graph doesn\'t show a date, so it is difficult to know when this data was collected. This makes it hard to compare the testing rates of these countries to current rates or rates at other points in time.
+
+-   The graph only shows data for six countries. This may not be a representative sample of the global population.
+
+-    A graph with too many elements, excessive labels, or unnecessary decoration can be overwhelming
 
 ## Improving to map chart
 
@@ -54,7 +62,7 @@ covid_data <- data.frame(
 
 #### Fig 5: 1 Redesign of Argentinian TV channel C5N manipulating the y-axis to hide the terrible number of COVID-19 test. Source: Reddit. Original Source: C5N into map.
 
-## Why we re-designed to map?
+## Why we re-designed to map? (Strengths)
 
 With the map we can see the countries with less covid test are represented in light shade and countries with more covid tests are represented in dark shade. By visually examining the graph structure, users can identify patterns, clusters, and outliers within the data. Map graphs serve as effective communication tools for presenting and sharing findings with stakeholders, collaborators, and the general public.
 
@@ -65,3 +73,11 @@ By converting into map we can achieve:
 -   By examining the map, users can identify patterns and clusters within the data. For example, they may observe clusters of darker shades in regions with more robust covid-19 tests or higher infection rates. Conversely, lighter shades may indicate areas with limited access to testing resources.
 
 -   We can see patterns and outlines easily and map graphs serve as effective communication tools for presenting findings to stakeholders, collaborators, and the general public.
+
+## Weakness of this chart:
+
+-   The graph only shows data for six countries. This may not be a representative sample of the global population.
+
+-    Maps that focus on political boundaries can obscure geographic features like mountains, rivers, and deserts. This can make it difficult to understand the physical geography of a place.
+
+-   Different map projections distort the Earth's landmasses in different ways. For example, the Mercator projection, which is commonly used, makes countries near the poles appear much larger than they actually are relative to countries near the equator.

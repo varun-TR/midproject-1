@@ -17,6 +17,20 @@ Now, look at those bars: Argentina tests almost as many people as the EEU! At le
 
 The graph makes Argentina look decent at testing people, while it's clearly not the case. The TV channel arbitrarily manipulated the bars' sizes with no regard for logic or rules of scaling. This is how the graph would look without manipulations.
 
+## Strength of this graph:
+
+-    The graph employs a familiar bar graph format, making it straightforward for viewers to compare data across different categories, in this case, countries.
+
+-   The graph centers on a single measure, namely the number of tests per million inhabitants, streamlining comparisons of testing rates among the six countries.
+
+-   The graph uses consistent colors for data representation which is easy for readers.
+
+## Visual flaws of this graph(Weakness):
+
+-   **Missing Date**: The graph doesn't tell us when the data was collected, so we don't know if it's recent or from the past. This makes it tricky to compare the testing rates to what's happening now or at different times.
+
+-   **Limited Scope**: The graph only includes data for six countries, which might not be enough to represent what's happening globally.
+
 ## Suggestions for improvements:
 
 -   By modifying the lengths of bar plots, we can actually see the difference between argentina and EEU being 20 times greater .

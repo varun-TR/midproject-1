@@ -17,7 +17,15 @@ The chart is from an anti-vaccine article claiming a significant increase in ath
 
 A more accurate comparison would be to contrast the number of collapses and deaths in the pre-COVID year of 2019, before the pandemic began. This comparison would provide a clearer understanding of any actual changes in the occurrences of collapses and deaths among athletes.
 
-## Visual flaws in graph.
+## Strengths of bad graph.
+
+1.  The graph help identify trends in data, such as whether something is increasing, decreasing, or staying the same over time. For example, a collapse and death graph for athletes can show if incidents are rising, falling, or remaining stable.
+
+2.  The graph make it simple to understand complex information by presenting it visually. Instead of sifting through numbers, viewers can quickly grasp patterns and relationships.
+
+3.  The graph is well designed and enable easy comparison between different datasets, allowing viewers to see how they relate. For example, a graph might juxtapose athlete incidents with the total number of athletes involved in the sport, providing valuable context for understanding the data.
+
+## Visual flaws in graph (Weakness).
 
 -   Adjusting the y-axis to start at zero can reveal smaller variations at the lower end, offering a more accurate representation of the data.
 
